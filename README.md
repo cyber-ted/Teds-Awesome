@@ -21,7 +21,7 @@
  - Firefox 
  - Vifm
  - cmus
- - st (Kindly compile this)
+ - st (Please do not use the binary of the simple terminal which is stterm, instead compile it from <a href="git://git.suckless.org/st"> suckless</a>. However, if you really want to use stterm then alter the rc.lua to match it).
 
 ## Ctrl+C and V 
 
@@ -33,7 +33,7 @@
 
 ## Compatibility
 
-I actually riced this in Ubuntu 2016.04 on 2022, so it should be mostly compatible, but may error out in newer builds on the arch repo
+I actually riced this in Ubuntu 2016.04 on 2022, so it should be mostly compatible, but may error out in newer builds on the arch repo.
 
 ## Support 
 
@@ -43,3 +43,7 @@ Mail me! at tedjoshissac@gmal.com for any trouble. You're welcome anytime.
 
 Check out : Chris Titus's config <a href="https://github.com/ChrisTitusTech/titus-awesome"> here</a>
 Or, Derek Taylor A.K.A DT's config <a href="https://gitlab.com/dwt1/dotfiles/-/tree/master/.config/awesome"> here</a>
+
+# Conclusion
+
+Have fun ricing. Cheers Mate!

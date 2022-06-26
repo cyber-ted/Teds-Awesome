@@ -21,6 +21,7 @@
  - Firefox 
  - Vifm
  - cmus
+ - st (Kindly compile this)
 
 # Ctrl+C and V 
 

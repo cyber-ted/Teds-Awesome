@@ -14,7 +14,7 @@
  
  - AwesomeWM (Obviously)
  - Guake
- - Compton (Forks are fine, just make sure to alter the rc.lua accordingly. Reccommended Fork : https://github.com/tryone144/compton for "Kawase Blur")
+ - Compton (Forks are fine, just make sure to alter the rc.lua accordingly. (Reccommended Fork : https://github.com/tryone144/compton for "Kawase Blur")
  - Nitrogen (or Feh, again, alter the rc.lua for feh!)
  - Gvim
  - Vim

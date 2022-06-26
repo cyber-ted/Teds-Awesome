@@ -4,9 +4,9 @@
  Copy them over to ~/.config/awesome/
  
  Commands: 
- $ git clone --recursive 
- $ cd AwesomeWM-Config/<
- $ cp rc.lua theme.lua ~/.config/awesome/
+ $ git clone --recursive </br> 
+ $ cd AwesomeWM-Config/ </br>
+ $ cp rc.lua theme.lua ~/.config/awesome/ </br>
  
  I made it so the wm has 2 wiboxes, this is considered pretty uncommon but enjoy!
  

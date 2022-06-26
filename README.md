@@ -4,9 +4,9 @@
  Copy them over to ~/.config/awesome/
  
  #### Commands
-     git clone --recursive </br> 
-     cd AwesomeWM-Config/ </br>
-     cp rc.lua theme.lua ~/.config/awesome/ </br>
+     git clone --recursive 
+     cd Teds-Awesome/ 
+     cp rc.lua theme.lua ~/.config/awesome/ 
  
  I made it so the wm has 2 wiboxes, this is considered pretty uncommon but enjoy!
  
@@ -25,11 +25,11 @@
 
 # Ctrl+C and V 
 
-Debian:- 
-    $ sudo apt-get install guake nitrogen compton git gvim vim firefox vifm cmus
+##### Debian
+    sudo apt-get install guake nitrogen compton git gvim vim firefox vifm cmus
 
-Arch-Linux:-
-    $ sudo pacman -S guake nitrogen compton git gvim vim firefox vifm cmus
+##### Arch-Linux
+    sudo pacman -S guake nitrogen compton git gvim vim firefox vifm cmus
 
 # Compatibility
 

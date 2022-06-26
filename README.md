@@ -26,10 +26,10 @@
 # Ctrl+C and V 
 
 Debian:- 
-$ sudo apt-get install guake nitrogen compton git gvim vim firefox vifm cmus
+    $ sudo apt-get install guake nitrogen compton git gvim vim firefox vifm cmus
 
 Arch-Linux:-
-$ sudo pacman -S guake nitrogen compton git gvim vim firefox vifm cmus
+    $ sudo pacman -S guake nitrogen compton git gvim vim firefox vifm cmus
 
 # Compatibility
 

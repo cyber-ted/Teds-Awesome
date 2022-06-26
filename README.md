@@ -4,7 +4,7 @@
  Copy them over to ~/.config/awesome/
  
  #### Commands
-     git clone --recursive 
+     git clone --recursive https://github.com/cyberprince04107/Teds-Awesome.git
      cd Teds-Awesome/ 
      cp rc.lua theme.lua ~/.config/awesome/ 
  

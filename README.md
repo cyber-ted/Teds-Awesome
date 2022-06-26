@@ -8,7 +8,7 @@
      cd Teds-Awesome/ 
      cp rc.lua theme.lua ~/.config/awesome/ 
  
- I made it so the wm has 2 wiboxes, this is considered pretty uncommon but enjoy!
+ I made it so the wm has 2 wiboxes, this is considered pretty uncommon, but enjoy!
  
  ## Dependencies 
  
@@ -21,7 +21,7 @@
  - Firefox 
  - Vifm
  - cmus
- - st (Please do not use the binary of the simple terminal which is stterm, instead compile it from <a href="git://git.suckless.org/st"> suckless</a>. However, if you really want to use stterm then alter the rc.lua to match it).
+ - st (Please do not use the binary of the simple terminal which is stterm, instead compile it from git://git.suckless.org/st. However, if you really want to use stterm then alter the rc.lua to match it).
 
 ## Ctrl+C and V 
 

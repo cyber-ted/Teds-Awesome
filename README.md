@@ -3,7 +3,7 @@
  This is my custom config files for AwesomeWM. 
  Copy them over to ~/.config/awesome/
  
- Commands: 
+ #### Commands
  $ git clone --recursive </br> 
  $ cd AwesomeWM-Config/ </br>
  $ cp rc.lua theme.lua ~/.config/awesome/ </br>

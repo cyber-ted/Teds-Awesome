@@ -12,11 +12,7 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 
 -- Load Debian menu entries
-require("debian.menu")
-
--- Theme File 
-beautiful.init("home/ted/.config/awesome/theme.lua")
-
+-- require("debian.menu")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -44,8 +40,15 @@ end
 -- }}}
 
 -- {{{ Variable definitions
+--
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+--
+-- DEFAULT THEME
+-- beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+
+-- CUSTOM THEME
+beautiful.init("/home/ted/.config/awesome/theme.lua")
+
 
 -- This is used later as the default terminal and editor to run.
 terminal = "st"
@@ -99,15 +102,16 @@ end
 --
 --
 myawesomemenu = {
-   { "manual", terminal .. " -e man awesome" },
-   { "edit config", editor_cmd .. " " .. awesome.conffile },
-   { "restart", awesome.restart },
-   { "quit", awesome.quit }
+   { "Manual", terminal .. " -e man awesome" },
+   { "Configure", "gvim /home/ted/.config/awesome/rc.lua" },
+   { "Theme", "gvim /home/ted/.config/awesome/theme.lua"},
+   { "Reboot", awesome.restart },
+   { "Log Out", awesome.quit }
 }
 
-mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                  { "Debian", debian.menu.Debian_menu.Debian },
-                                    { "open terminal", terminal }
+mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu}, -- , beautiful.awesome_icon
+                                  --{ "Debian", debian.menu.Debian_menu.Debian },
+                                    { "Terminal", "guake" }
                                   }
                         })
 
@@ -299,8 +303,10 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
 
     -- CUSTOM ONES	
-    awful.key({modkey}, "w", function() awful.util.spawn("firefox") end),
+    awful.key({modkey}, "s", function() awful.util.spawn("firefox") end),
     awful.key({modkey}, "g", function() awful.util.spawn("gvim") end),
+    awful.key({modkey}, "c", function() awful.util.spawn("st -e cmus") end), 
+    awful.key({modkey}, "d", function() awful.util.spawn("st -e vifm") end),
 
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
@@ -410,8 +416,12 @@ awful.rules.rules = {
     { rule = { class = "gimp" },
       properties = { floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { tag = tags[1][2] } },
+    { rule = { class = "Firefox" },
+      properties = { tag = tags[1][2] } },
+    
+    { rule = { class = "Gvim" }, 
+      properties = { tag = tags[1][1]} },
+
 }
 -- }}}
 
@@ -498,5 +508,4 @@ awful.util.spawn("nitrogen --restore")
 awful.util.spawn("compton")
 awful.util.spawn("guake")
 --
-beautiful.useless_gap = 20
 -- }}}

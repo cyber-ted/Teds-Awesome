@@ -1,28 +1,28 @@
 ---------------------------
--- Default awesome theme --
+-- Ted's awesome theme --
 ---------------------------
 
 theme = {}
 
 theme.font          = "sans 8"
 
-theme.bg_normal     = "#222222"
-theme.bg_focus      = "#535d6c"
-theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#444444"
+theme.bg_normal     = "#3B3936"  -- WIBOX
+theme.bg_focus      = "#8268A6"  -- ALL FOCUS
+theme.bg_urgent     = "#BD2A2E" 
+theme.bg_minimize   = "#D49DBD" -- WINDOW MINIMIZE
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#ffffff"
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+theme.fg_normal     = "#E7D3E3" --FONT
+theme.fg_focus      = "#F2F2F2"
+theme.fg_urgent     = "#FF0045"
+theme.fg_minimize   = "#3C0F59" -- MIN FONT 
 
-theme.border_width  = 1
-theme.border_normal = "#000000"
-theme.border_focus  = "#535d6c"
-theme.border_marked = "#91231c"
+theme.border_width  = 2
+theme.border_normal = "#9A74D4"
+theme.border_focus  = "#CB8CEB"
+theme.border_marked = "#F687CB"
 
-theme.useless_gap = 10
+theme.useless_gap = 20
 -- There are other variable sets
 -- overriding the default one when
 -- defined, the sets are:

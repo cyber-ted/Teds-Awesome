@@ -106,6 +106,7 @@ myawesomemenu = {
    { "Configure", "gvim /home/ted/.config/awesome/rc.lua" },
    { "Theme", "gvim /home/ted/.config/awesome/theme.lua"},
    { "Reboot", awesome.restart },
+   { "Lock", "i3lock -i /home/ted/.config/awesome/images/lockscreen.png"},
    { "Log Out", awesome.quit }
 }
 
@@ -307,11 +308,12 @@ globalkeys = awful.util.table.join(
     awful.key({modkey}, "g", function() awful.util.spawn("gvim") end),
     awful.key({modkey}, "c", function() awful.util.spawn("st -e cmus") end), 
     awful.key({modkey}, "d", function() awful.util.spawn("st -e vifm") end),
+    awful.key({modkey}, "e", function() awful.util.spawn("i3lock -i /home/ted/.config/awesome/images/lockscreen.png") end),
 
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
     -- Prompt
-    awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
+    awful.key({ modkey },            "p",     function () mypromptbox[mouse.screen]:run() end),
 
     awful.key({ modkey }, "x",
               function ()
@@ -321,7 +323,7 @@ globalkeys = awful.util.table.join(
                   awful.util.getdir("cache") .. "/history_eval")
               end),
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end)
+    awful.key({ modkey }, "r", function() menubar.show() end)
 )
 
 clientkeys = awful.util.table.join(
@@ -504,7 +506,7 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- Autostart applications 
-awful.util.spawn("nitrogen --restore")
+awful.util.spawn("nitrogen --set-zoom-fill /home/ted/.config/awesome/images/background.jpg")
 awful.util.spawn("compton")
 awful.util.spawn("guake")
 --

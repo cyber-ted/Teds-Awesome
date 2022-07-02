@@ -5,8 +5,7 @@
  
  #### Commands
      git clone --recursive https://github.com/cyberprince04107/Teds-Awesome.git
-     cd Teds-Awesome/ 
-     cp rc.lua theme.lua ~/.config/awesome/ 
+     cp Teds-Awesome/* ~/.config/awesome/  
  
  I made it so the wm has 2 wiboxes, this is considered pretty uncommon, but enjoy!
  
@@ -22,14 +21,15 @@
  - Vifm
  - cmus
  - st (Please do not use the binary of the simple terminal which is stterm, instead compile it from git://git.suckless.org/st. However, if you really want to use stterm then alter the rc.lua to match it).
+ - i3lock 
 
 ## Ctrl+C and V 
 
 ##### Debian
-    sudo apt-get install guake nitrogen compton git gvim vim firefox vifm cmus
+    sudo apt-get install guake nitrogen compton git gvim vim firefox vifm cmus i3lock
 
 ##### Arch-Linux
-    sudo pacman -S guake nitrogen compton git gvim vim firefox vifm cmus
+    sudo pacman -S guake nitrogen compton git gvim vim firefox vifm cmus i3lock
 
 ## Compatibility
 
@@ -37,7 +37,7 @@ I actually riced this in Ubuntu 2016.04 on 2022, so it should be mostly compatib
 
 ## Support 
 
-Mail me! at tedjoshissac@gmal.com for any trouble. You're welcome anytime.
+Mail me! at tedjoshissac@gmail.com for any trouble. You're welcome anytime.
 
 ## NOT SATISFIED YET?!
 
@@ -46,4 +46,6 @@ Or, Derek Taylor A.K.A DT's config <a href="https://gitlab.com/dwt1/dotfiles/-/t
 
 # Conclusion
 
+NB: This config is for users who need a minimal but complete workspace. 
 Have fun ricing. Cheers Mate!
+

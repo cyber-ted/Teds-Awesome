@@ -44,7 +44,7 @@ Mail me! at tedjoshissac@gmail.com for any trouble. You're welcome anytime.
 Check out : Chris Titus's config <a href="https://github.com/ChrisTitusTech/titus-awesome"> here</a>
 Or, Derek Taylor A.K.A DT's config <a href="https://gitlab.com/dwt1/dotfiles/-/tree/master/.config/awesome"> here</a>
 
-# Conclusion
+## Conclusion
 
 NB: This config is for users who need a minimal but complete workspace. 
 Have fun ricing. Cheers Mate!
